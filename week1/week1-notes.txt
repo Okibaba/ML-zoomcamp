@@ -1,2 +1,4 @@
-09/19
+09/19/2024
 watched course introduction video
+09/20/2024
+ML versus rule based systems -spam detection systems as example 
