@@ -1,2 +1,18 @@
+
+
+10/25/2024
+video 5.4
 call flask from cmd
 curl http://0.0.0.0:9696
+
+-preferably use JSON for POST & GET
+
+-  use gunicorn for production
+- it only works with linux or unix not with windows
+-alternative to gunicorn for windows is waitress, pip install waitress
+waitress-serve  --listen=0.0.0.0:9696 predict:app
+
+pip install gunicorn
+
+gunicorn run predict:app
+gunicorn --bind 0.0.0.0:9696 predict:app
