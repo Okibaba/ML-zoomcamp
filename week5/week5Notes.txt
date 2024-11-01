@@ -16,3 +16,21 @@ pip install gunicorn
 
 gunicorn run predict:app
 gunicorn --bind 0.0.0.0:9696 predict:app
+
+section 5.5
+
+Python virtual environment pipenv
+pipenv install 
+Pipfile.lock contains the checksum numbers
+
+'pipenv shell' - takes you to shell shows which files areused in virtual env.
+'which gunicorn' shows file version used in virtual env
+Ctrl + D to exit shell
+
+to just go straight to shell:
+pipenv run gunicorn --bind 0.0.0.0:9696 predict:app
+
+
+section 5.6 - Environment management
+Takes things to the next level
+ 
