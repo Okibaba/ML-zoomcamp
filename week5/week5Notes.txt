@@ -32,5 +32,16 @@ pipenv run gunicorn --bind 0.0.0.0:9696 predict:app
 
 
 section 5.6 - Environment management
-Takes things to the next level
+Takes things to the next level, you can separate system level files/OS requirements not just versions or software packages.
+-rewatching first 15 mins morning & 15 mins at night- new cadence.
+
+#code blocks
+--
+docker run -it --rm --entrypoint=bash python:3.8.11-slim #uses bash as entry point instead of your normal command line for python
+apt-get update
+apt-get install wget
+
+--
+
+
  
