@@ -18,7 +18,6 @@ gunicorn run predict:app
 gunicorn --bind 0.0.0.0:9696 predict:app
 
 section 5.5
-
 Python virtual environment pipenv
 pipenv install 
 Pipfile.lock contains the checksum numbers
@@ -30,8 +29,7 @@ Ctrl + D to exit shell
 to just go straight to shell:
 pipenv run gunicorn --bind 0.0.0.0:9696 predict:app
 
-
-section 5.6 - Environment management
+section 5.6 - Environment management [10:21 mins]
 Takes things to the next level, you can separate system level files/OS requirements not just versions or software packages.
 -rewatching first 15 mins morning & 15 mins at night- new cadence.
 
@@ -40,8 +38,20 @@ Takes things to the next level, you can separate system level files/OS requireme
 docker run -it --rm --entrypoint=bash python:3.8.11-slim #uses bash as entry point instead of your normal command line for python
 apt-get update
 apt-get install wget
+mkdir test
+cd test
+#whatever we do is in isolation from other system
 
 --
+
+build docker image:
+docker build -t zoomcamp-test . [note the ".", runs the docker file in directory]
+
+
+11/14/2024:
+section 5.7
+
+
 
 
  
